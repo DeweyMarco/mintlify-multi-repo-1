@@ -1,0 +1,35 @@
+---
+title: "Merge Sort API"
+description: "A stable O(n log n) sorter with a focused HTTP interface."
+mode: "custom"
+---
+
+<div className="mx-auto max-w-5xl px-6 py-16">
+  <div className="max-w-3xl">
+    <p className="text-sm font-semibold text-blue-600 dark:text-blue-400">SORTING, WITHOUT THE SURPRISES</p>
+    <h1 className="mt-4 text-5xl font-bold tracking-tight">Sort predictable data with a predictable API</h1>
+    <p className="mt-6 text-xl text-gray-600 dark:text-gray-300">Run a stable merge sort locally or call it over HTTP. The input is never mutated, duplicates preserve their order, and the runtime stays O(n log n).</p>
+    <div className="mt-8 flex gap-3">
+      <a className="ms-primary-button" href="/quickstart">Run your first sort</a>
+      <a className="ms-secondary-button" href="/api-reference/overview">Explore the API</a>
+    </div>
+  </div>
+
+  <div className="mt-16">
+    <CardGroup cols={3}>
+      <Card title="Start locally" icon="terminal" href="/quickstart">Install the service and send a request in a few commands.</Card>
+      <Card title="Understand the algorithm" icon="git-merge" href="/guides/merge-sort">See the split, sort, and merge phases and their complexity.</Card>
+      <Card title="Use the API" icon="braces" href="/api-reference/overview">Inspect request models, responses, and errors.</Card>
+    </CardGroup>
+  </div>
+
+  <div className="mt-16">
+    <h2 className="text-2xl font-semibold">Your first request</h2>
+
+```bash
+curl -X POST http://localhost:8000/sort \
+  -H 'Content-Type: application/json' \
+  -d '{"values":[8,3,5,1,4]}'
+```
+  </div>
+</div>

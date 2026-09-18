@@ -1,0 +1,15 @@
+---
+title: "Development"
+description: "Understand the small project layout."
+---
+
+## Project layout
+
+```text
+src/merge_sort_service/
+├── algorithm.py   # framework-independent merge sort
+└── api.py         # FastAPI models and routes
+docs/              # independent Mintlify deployment
+```
+
+Keeping the algorithm independent from FastAPI makes it easy to read and reuse without starting a server.

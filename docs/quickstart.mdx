@@ -1,0 +1,50 @@
+---
+title: "Quickstart"
+description: "Start the API and sort your first list."
+---
+
+## Prerequisites
+
+Install Python 3.11 or newer and [uv](https://docs.astral.sh/uv/).
+
+<Steps>
+  <Step title="Install the project">
+    From the repository root, install the application and test dependencies.
+
+```bash
+uv sync --extra dev
+```
+  </Step>
+  <Step title="Start the API">
+
+```bash
+uv run uvicorn merge_sort_service.api:app --reload
+```
+
+    The server listens on `http://localhost:8000`.
+  </Step>
+  <Step title="Sort a list">
+
+```bash
+curl -X POST http://localhost:8000/sort \
+  -H 'Content-Type: application/json' \
+  -d '{"values":[8,3,5,1,4]}'
+```
+
+```json
+{"values":[1.0,3.0,4.0,5.0,8.0],"count":5,"descending":false}
+```
+  </Step>
+</Steps>
+
+<Tip>Interactive Swagger UI is available at `http://localhost:8000/docs` while the API is running.</Tip>
+
+## Run the documentation
+
+In a second terminal:
+
+```bash
+cd docs
+npm install
+npm run dev
+```

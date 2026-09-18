@@ -1,0 +1,17 @@
+---
+title: "API overview"
+description: "Request conventions and local endpoints for the Merge Sort API."
+---
+
+The local base URL is:
+
+```text
+http://localhost:8000
+```
+
+Requests and responses use JSON. FastAPI returns `422 Unprocessable Entity` when a request body doesn't match the schema.
+
+<CardGroup cols={2}>
+  <Card title="Sort values" icon="arrow-up-down" href="/api-reference/sort">Sort up to 10,000 numeric values.</Card>
+  <Card title="Health check" icon="heart-pulse" href="/api-reference/health">Confirm that the service process is ready.</Card>
+</CardGroup>

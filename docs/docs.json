@@ -1,0 +1,53 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "luma",
+  "name": "Merge Sort API",
+  "description": "Stable sorting as a small, dependable API.",
+  "colors": {
+    "primary": "#2563EB",
+    "light": "#60A5FA",
+    "dark": "#1D4ED8"
+  },
+  "appearance": {
+    "default": "system",
+    "strict": false
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "logo": {
+    "light": "/assets/logo-light.svg",
+    "dark": "/assets/logo-dark.svg",
+    "href": "/"
+  },
+  "favicon": "/assets/favicon.svg",
+  "api": {
+    "openapi": "openapi.json"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Quickstart",
+      "href": "/quickstart"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get started",
+        "icon": "rocket",
+        "pages": ["quickstart"]
+      },
+      {
+        "group": "Learn",
+        "icon": "book-open",
+        "pages": ["guides/merge-sort", "guides/development"]
+      },
+      {
+        "group": "API reference",
+        "icon": "braces",
+        "pages": ["api-reference/overview", "api-reference/sort", "api-reference/health"]
+      }
+    ]
+  }
+}

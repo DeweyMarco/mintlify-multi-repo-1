@@ -1,0 +1,24 @@
+.ms-primary-button,
+.ms-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.ms-primary-button {
+  background: #2563eb;
+  color: #fff !important;
+}
+
+.ms-primary-button:hover { background: #1d4ed8; }
+
+.ms-secondary-button {
+  border: 1px solid #d1d5db;
+  color: inherit !important;
+}
+
+.ms-secondary-button:hover { border-color: #2563eb; }
